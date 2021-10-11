@@ -1,0 +1,187 @@
+<html>
+
+
+<head>
+    <title>Movies</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <meta name="description" content="Movies">
+
+    <meta name="keywords" content="movies,movie,films,film">
+
+    <meta name="author" content="Abdelrahman Elsayed">
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body class="bg-dark">
+
+    <div id="loading">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div>
+
+    <section id="home">
+
+        <div class="boxContainer d-flex position-fixed shadow">
+            <div class="box vh-100 p-3 position-relative bg-dark">
+                <div class="linkContainer px-3">
+                    <a class="my-4 fs-5 link position-relative me-5" href="#home" value="now_playing">Now playing</a>
+                    <a class="my-4 fs-5 link position-relative me-5" href="#home" value="popular">Popular</a>
+                    <a class="my-4 fs-5 link position-relative me-5" href="#home" value="top_rated">Top rated</a>
+                    <a class="my-4 fs-5 trend position-relative me-5" href="#home" value="trending">Trending</a>
+                    <a class="my-4 fs-5 link position-relative me-5" href="#home" value="upcoming">Upcoming</a>
+                    <a class="my-4 fs-5 position-relative me-5" href="#subscribe">Subscribe</a>
+                </div>
+                <div class="text-white text-center Copyright px-3">
+                    <div class="my-3">
+                        <i class="fab fa-facebook-f mx-2"></i>
+                        <i class="fab fa-twitter mx-2"></i>
+                        <i class="fas fa-globe mx-2"></i>
+                    </div>
+                    <p>Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+            <div class="vh-100 d-flex justify-content-center align-items-center bg-white position-relative">
+                <div class="icon2"><img src="images/logo.png" alt=""></div>
+                <div class="icon p-2 fs-4 fw-bolder text-dark mx-2"><i class="fas fa-bars fa-fw"></i></div>
+                <div class="icon3">
+                    <i class="fas fa-globe d-block my-2"></i>
+                    <i class="fas fa-share-alt d-block my-2"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <div class="form-floating mb-3 text-white">
+                        <input type="text" class="form-control bg-dark border-0 text-white shadow" id="search"
+                            placeholder="Search">
+                        <label for="search">Search</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating mb-3 text-white">
+                        <input type="text" class="form-control bg-dark border-0 text-white shadow" id="filter"
+                            placeholder="Filter">
+                        <label for="filter">Filter</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row divs">
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="subscribe" class="py-5">
+        <div class="container">
+            <h2 class="text-white my-3">Subscribe</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-floating my-3 text-white">
+                        <input type="text" class="form-control bg-dark border-0 text-white shadow" id="name"
+                            placeholder="Name">
+                        <label for="name">Name</label>
+                    </div>
+                    <p id="nameAlert" class="alert alert-danger fw-bolder d-none bg-dark border-0 shadow">Name should be
+                        between 2 to 20 characters (a
+                        to z or A to Z or space)</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating my-3 text-white">
+                        <input type="text" class="form-control bg-dark border-0 text-white shadow" id="email"
+                            placeholder="Email">
+                        <label for="email">Email</label>
+                    </div>
+                    <p id="emailAlert" class="alert alert-danger fw-bolder d-none bg-dark border-0 shadow">Email should
+                        be such as
+                        example@domain.com
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating my-3 text-white">
+                        <input type="tel" class="form-control bg-dark border-0 text-white shadow" id="phone"
+                            placeholder="Phone">
+                        <label for="phone">Phone</label>
+                    </div>
+                    <p id="phoneAlert" class="alert alert-danger fw-bolder d-none bg-dark border-0 shadow">Phone number
+                        should be such as
+                        010********
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating my-3 text-white">
+                        <input type="number" class="form-control bg-dark border-0 text-white shadow" id="age"
+                            placeholder="Age">
+                        <label for="age">Age</label>
+                    </div>
+                    <p id="ageAlert" class="alert alert-danger fw-bolder d-none bg-dark border-0 shadow">You must be 18
+                        years of age or older</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating my-3 text-white">
+                        <input type="password" class="form-control bg-dark border-0 text-white shadow" id="password"
+                            placeholder="Password">
+                        <label for="password">Password</label>
+                    </div>
+                    <p id="passwordAlert" class="alert alert-danger fw-bolder d-none bg-dark border-0 shadow">
+                        Password should contain at least 8 characters
+                        1 number 1 lowercase character 1 uppercase character</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating my-3 text-white">
+                        <input type="password" class="form-control bg-dark border-0 text-white shadow" id="rePassword"
+                            placeholder="RePassword">
+                        <label for="rePassword">RePassword</label>
+                    </div>
+                    <p id="rePasswordAlert" class="alert alert-danger fw-bolder d-none bg-dark border-0 shadow">
+                        Doesn't match</p>
+                </div>
+                <p id="requiredAlert"
+                    class="w-50 m-auto alert alert-danger fw-bolder d-none bg-dark border-0 shadow text-center">
+                    All inputs is required</p>
+                <p id="successAlert"
+                    class="w-50 m-auto alert alert-success fw-bolder d-none bg-dark border-0 shadow text-center">
+                    Success</p>
+                <div class="my-3"><button class="btn btn-outline-danger submit disabled">Submit</button></div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+
+
+
+</html>
